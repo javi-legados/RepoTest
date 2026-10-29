@@ -1,0 +1,49 @@
+# Implementation Plan: Rejection and Revision Review
+
+**Branch**: `008-rejection-revision-review` | **Date**: 2026-10-29 | **Spec**: [spec.md](spec.md)
+
+## Summary
+
+Reuse the Spec 6 review mechanism for the Revision Review: a rejected request returns to the Creator (editable), `ResubmitRequest` sends it to a new review of type Revision, and release restarts the chain from the first applicable level with approvers resolved at release time. Cycles are recorded in a `RevisionCycle` table. Hold on Creator deactivation and the N-day Creator reminder use Power Automate flows and the `PlatformSetting` table of Spec 7.
+
+## Technical Context
+
+**Language/Version**: Dataverse custom action + C# plug-in (shared with Spec 6); Power Automate
+**Primary Dependencies**: Specs 3, 6, 7; Spec 9 (notifications); Spec 11 (history)
+**Storage**: `RevisionCycle` table; `ReviewType` on the review table
+**Testing**: Web API tests of several cycles, deactivated Creator and approver cases, quickstart.md
+**Target Platform**: Power Platform environment
+**Project Type**: Power Platform solution
+**Performance Goals**: Same as Spec 6
+**Constraints**: No cycle limit; no auto-close; approvers resolved at release
+**Scale/Scope**: Unbounded cycles per request
+
+## Constitution Check
+
+| Principle / Constraint | Status | Notes |
+|---|---|---|
+| Standard capabilities first | Pass | Reuses Spec 6 actions and tables |
+| Justify complexity | Pass | No new plug-in; extends Spec 6 |
+| Rules enforced by system | Pass | Actions only |
+| Immutable history | Pass | Cycles append-only |
+| Every status change sends an email | Pass | Notification requests |
+
+## Project Structure
+
+```text
+specs/008-rejection-revision-review/
+├── plan.md  research.md  data-model.md  quickstart.md
+└── contracts/revision-actions.md
+solution/CEAPlatform/
+├── Tables/    # RevisionCycle
+├── Plugins/   # ResubmitRequest (extends Spec 6 plug-in assembly)
+├── Flows/     # Creator hold, Creator reminder
+└── ModelDrivenApp/  # Revision history subgrid
+tests/api/
+```
+
+**Structure Decision**: Same plug-in assembly as Spec 6; no new component types.
+
+## Complexity Tracking
+
+No violations.
