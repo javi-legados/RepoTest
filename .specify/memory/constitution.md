@@ -5,9 +5,11 @@
 ### I. Workflow Integrity
 A CEA Request MUST follow the defined chain: Creator -> CEA Administrator Initial Review ->
 Manager -> Plant Manager -> Regional Approver -> CEA Administrators (final processing). No step
-MAY be skipped or reordered. Any rejection MUST require comments and return the request to the
-Creator; a revised request MUST pass a CEA Administrator Revision Review before re-entering the
-chain. Approvers are resolved per request from the Creator: the Manager is the Creator's direct
+MAY be skipped or reordered. After creating the request, the Creator MUST submit it to the CEA
+Administrators for Initial Review; the request MUST enter the approval chain only after one CEA
+Administrator approves that review. Any rejection, including a rejection at review, MUST require
+comments and return the request to the Creator; a revised request MUST pass a CEA Administrator
+Revision Review, approved by one CEA Administrator, before re-entering the chain. Approvers are resolved per request from the Creator: the Manager is the Creator's direct
 manager (Manager Email on the user record), the Plant Manager is the approver assigned to the
 Creator's Plant Business Unit, and the Regional Approver is the approver assigned to the
 Creator's Region Business Unit. A request MUST NOT be submitted when any approver cannot be
@@ -19,8 +21,9 @@ Rationale: approvals are a business control; the sequence is the product.
 Access MUST be the combination of security role and Business Unit position. The roles are:
 CEA Creators (create/edit own Draft and rejected requests, view only own), CEA Internal
 Approvals (approve/reject with mandatory comments, no edits, only requests within their approval
-hierarchy), CEA Approvals (read-only, all records), and CEA Administrators (full access, reviews,
-workflow exceptions, platform administration, final documentation). Business Units follow
+hierarchy), CEA Approvals (read-only, all records), and CEA Administrators (full access, approve
+or reject at Initial and Revision Review only, workflow exceptions, platform administration,
+final documentation). Business Units follow
 Enterprise > Company > Region > Plant, and a user MUST see only records of their own Business Unit
 and those below it. The permission matrix in the User Roles document is authoritative.
 Rationale: prevents unauthorized approvals and data exposure.
@@ -78,4 +81,4 @@ versioning: MAJOR for removed or redefined principles, MINOR for added or materi
 guidance, PATCH for clarifications. Plans and pull request reviews MUST verify compliance, and
 deviations MUST be justified in writing.
 
-**Version**: 1.1.1 | **Ratified**: 2026-10-29 | **Last Amended**: 2026-10-29
+**Version**: 1.2.0 | **Ratified**: 2026-10-29 | **Last Amended**: 2026-10-29
