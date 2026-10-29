@@ -7,7 +7,11 @@ A CEA Request MUST follow the defined chain: Creator -> CEA Administrator Initia
 Manager -> Plant Manager -> Regional Approver -> CEA Administrators (final processing). No step
 MAY be skipped or reordered. Any rejection MUST require comments and return the request to the
 Creator; a revised request MUST pass a CEA Administrator Revision Review before re-entering the
-chain. A Creator MUST NOT modify a request while it is pending review or approval, or after it is
+chain. Approvers are resolved per request from the Creator: the Manager is the Creator's direct
+manager (Manager Email on the user record), the Plant Manager is the approver assigned to the
+Creator's Plant Business Unit, and the Regional Approver is the approver assigned to the
+Creator's Region Business Unit. A request MUST NOT be submitted when any approver cannot be
+resolved. A Creator MUST NOT modify a request while it is pending review or approval, or after it is
 approved; edits are allowed only in Draft or Rejected status.
 Rationale: approvals are a business control; the sequence is the product.
 
@@ -74,4 +78,4 @@ versioning: MAJOR for removed or redefined principles, MINOR for added or materi
 guidance, PATCH for clarifications. Plans and pull request reviews MUST verify compliance, and
 deviations MUST be justified in writing.
 
-**Version**: 1.1.0 | **Ratified**: 2026-10-29 | **Last Amended**: 2026-10-29
+**Version**: 1.1.1 | **Ratified**: 2026-10-29 | **Last Amended**: 2026-10-29
