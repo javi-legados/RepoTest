@@ -13,10 +13,15 @@
 ### Session 2026-10-29
 
 - Q: ¿Qué campos son obligatorios para guardar un Draft? → A: Todos los campos de la sección 1 (Requester Data) y la sección 2 (Project Category) del formulario; el resto puede quedar incompleto hasta el envío.
-- Q: ¿Qué pasa si un mes de pronóstico cae fuera del calendario del proyecto? → A: Se muestra una advertencia, pero se permite guardar y enviar.## User Scenarios & Testing *(mandatory)*
-- Q: ¿Qué pasa si el pronóstico tiene dos líneas para el mismo año y mes? → A: Se bloquea; cada año/mes solo puede aparecer una vez.## User Scenarios & Testing *(mandatory)*
-- Q: ¿Se puede enviar con Grand Total igual a cero? → A: No; el Grand Total debe ser mayor a cero.## User Scenarios & Testing *(mandatory)*### User Story 1 - Create and save a request Draft (Priority: P1)
-- Q: ¿Qué pasa si Project in Plan = Yes y el Budgeted Amount es menor al Grand Total? → A: Se muestra una advertencia visible, pero se permite guardar y enviar.## User Scenarios & Testing *(mandatory)*### User Story 1 - Create and save a request Draft (Priority: P1)
+- Q: ¿Qué pasa si un mes de pronóstico cae fuera del calendario del proyecto? → A: Se muestra una advertencia, pero se permite guardar y enviar.
+- Q: ¿Qué pasa si el pronóstico tiene dos líneas para el mismo año y mes? → A: Se bloquea; cada año/mes solo puede aparecer una vez.
+- Q: ¿Se puede enviar con Grand Total igual a cero? → A: No; el Grand Total debe ser mayor a cero.
+- Q: ¿Qué pasa si Project in Plan = Yes y el Budgeted Amount es menor al Grand Total? → A: Se muestra una advertencia visible, pero se permite guardar y enviar.
+
+## User Scenarios & Testing *(mandatory)*
+
+### User Story 1 - Create and save a request Draft (Priority: P1)
+
 A CEA Creator opens a new request, sees their name, location, department, and the current date
 filled in automatically, completes the project data, and saves it as a Draft that they can
 reopen and continue later.
