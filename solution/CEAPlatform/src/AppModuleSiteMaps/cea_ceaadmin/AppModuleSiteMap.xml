@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>cea_ceaadmin</SiteMapUniqueName>
+  <EnableCollapsibleGroups>False</EnableCollapsibleGroups>
+  <ShowHome>True</ShowHome>
+  <ShowPinned>True</ShowPinned>
+  <ShowRecents>True</ShowRecents>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area Id="area_admin" ShowGroups="true">
+      <Titles>
+        <Title LCID="1033" Title="Administration" />
+      </Titles>
+      <Group Id="grp_users" IsProfile="false">
+        <Titles>
+          <Title LCID="1033" Title="Users" />
+        </Titles>
+        <SubArea Id="sa_users" Entity="systemuser" Title="Users" />
+        <SubArea Id="sa_incomplete" Title="Incomplete Users" Url="/main.aspx?pagetype=entitylist&amp;etn=systemuser&amp;viewid=%7B47ed80a4-fcd3-f111-a05a-3833c5e36f1f%7D&amp;viewtype=1039" />
+        <SubArea Id="sa_log" Entity="cea_userchangerecord" Title="User Change Records" />
+      </Group>
+      <Group Id="grp_master" IsProfile="false">
+        <Titles>
+          <Title LCID="1033" Title="Master Data" />
+        </Titles>
+        <SubArea Id="sa_company" Entity="cea_company" Title="Companies" />
+        <SubArea Id="sa_region" Entity="cea_region" Title="Regions" />
+        <SubArea Id="sa_plant" Entity="cea_plant" Title="Plants" />
+        <SubArea Id="sa_bu" Entity="businessunit" Title="Business Units" />
+        <SubArea Id="sa_denials" Entity="cea_accessdenialrecord" Title="Access Denial Records" />
+        <SubArea Id="sa_approvers" Entity="cea_approverassignment" Title="Approver Assignments" />
+        <SubArea Id="sa_reassign" Entity="cea_reassignmentrecord" Title="Reassignment Records" />
+        <SubArea Id="sa_resolved" Entity="cea_resolvedapprover" Title="Resolved Approvers" />
+        <SubArea Id="sa_requests" Entity="cea_request" Title="CEA Requests" />
+        <SubArea Id="sa_initialreviews" Entity="cea_initialreview" Title="Initial Reviews" />
+        <SubArea Id="sa_settings" Entity="cea_platformsetting" Title="Platform Settings" />
+        <SubArea Id="sa_pending" Entity="cea_request" Title="My Pending Approvals" />
+        <SubArea Id="sa_templates" Entity="cea_emailtemplate" Title="Email Templates" />
+        <SubArea Id="sa_notifout" Entity="cea_notificationoutcome" Title="Notification Outcomes" />
+        <SubArea Id="sa_finalq" Entity="cea_request" Title="Final Processing Queue" />
+        <SubArea Id="sa_completed" Entity="cea_request" Title="Completed Requests" />
+        <SubArea Id="sa_corrections" Entity="cea_datacorrectionrecord" Title="Data Corrections" />
+        <SubArea Id="sa_adminaudit" Entity="cea_administrativeauditentry" Title="Administrative Audit" />
+        <SubArea Id="sa_allhistory" Entity="cea_historyentry" Title="All History" />
+        <SubArea Id="sa_decisions" Entity="cea_approvaldecision" Title="Approval Decisions" />
+        <SubArea Id="sa_attachments" Entity="cea_requestattachment" Title="Attachments" />
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="CEA Administration" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

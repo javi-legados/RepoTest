@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="cea.cea_requestattachment.SubGrid.Add.CustomAction" Location="Mscrm.SubGrid.cea_requestattachment.MainTab.Management.Controls._children" Sequence="14">
+      <CommandUIDefinition>
+        <Button Id="cea.cea_requestattachment.SubGrid.Add" Command="cea.cea_requestattachment.SubGrid.Add.Command" LabelText="Add attachment" ToolTipTitle="Add attachment" ToolTipDescription="Add an attachment (Draft or Rejected requests only)" Sequence="14" TemplateAlias="o1" ModernImage="New" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="cea.cea_requestattachment.SubGrid.Remove.CustomAction" Location="Mscrm.SubGrid.cea_requestattachment.MainTab.Management.Controls._children" Sequence="16">
+      <CommandUIDefinition>
+        <Button Id="cea.cea_requestattachment.SubGrid.Remove" Command="cea.cea_requestattachment.SubGrid.Remove.Command" LabelText="Remove attachment" ToolTipTitle="Remove attachment" ToolTipDescription="Remove the selected attachments (Draft or Rejected requests only)" Sequence="16" TemplateAlias="o1" ModernImage="Delete" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <HideCustomAction Id="cea.cea_requestattachment.Hide.AddExisting" HideActionId="Mscrm.SubGrid.cea_requestattachment.AddExistingStandard" Location="Mscrm.SubGrid.cea_requestattachment.AddExistingStandard" />
+    <HideCustomAction Id="cea.cea_requestattachment.Hide.AddNew" HideActionId="Mscrm.SubGrid.cea_requestattachment.AddNewStandard" Location="Mscrm.SubGrid.cea_requestattachment.AddNewStandard" />
+    <HideCustomAction Id="cea.cea_requestattachment.Hide.BulkDelete" HideActionId="Mscrm.SubGrid.cea_requestattachment.BulkDelete" Location="Mscrm.SubGrid.cea_requestattachment.BulkDelete" />
+    <HideCustomAction Id="cea.cea_requestattachment.Hide.Delete" HideActionId="Mscrm.SubGrid.cea_requestattachment.Delete" Location="Mscrm.SubGrid.cea_requestattachment.Delete" />
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="cea.cea_requestattachment.SubGrid.Add.Command">
+      <EnableRules>
+        <EnableRule Id="cea.cea_requestattachment.Editable.Enable" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="CEA.RequestForm.addAttachment" Library="$webresource:cea_/scripts/requestForm.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="cea.cea_requestattachment.SubGrid.Remove.Command">
+      <EnableRules>
+        <EnableRule Id="cea.cea_requestattachment.Editable.Enable" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="CEA.RequestForm.removeAttachments" Library="$webresource:cea_/scripts/requestForm.js">
+          <CrmParameter Value="PrimaryControl" />
+          <CrmParameter Value="SelectedControlSelectedItemIds" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules>
+      <EnableRule Id="cea.cea_requestattachment.Editable.Enable">
+        <CustomRule FunctionName="CEA.RequestForm.attachmentsEditable" Library="$webresource:cea_/scripts/requestForm.js" Default="false">
+          <CrmParameter Value="PrimaryControl" />
+        </CustomRule>
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels />
+</RibbonDiffXml>

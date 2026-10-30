@@ -14,3 +14,6 @@
 | R10 | Indefinite retention: no bulk delete or retention jobs; Draft deletion removes its draft-time records | FR-010 | Archive job |
 | R11 | No export: no export-to-Excel privilege on the history tables; timeline on screen only | FR-011 | Allow export |
 | R12 | Request ID format proposed as `CEA-YYYY-NNNNN` via auto-number (Spec 4 defers the format here, but this spec does not define it; to confirm with the user) | Spec 4 assumption | GUID |
+
+
+**R12 confirmado por el usuario**: formato CEA-YYYY-NNNNN (AutoNumberFormat `CEA-{DATETIMEUTC:yyyy}-{SEQNUM:5}`), aplicado en Dev y en provision-004.mjs.

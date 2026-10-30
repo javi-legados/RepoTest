@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="CEA DecisionGuard: cea_ApproveStep" SdkMessageProcessingStepId="{a21b82fd-16d4-f111-a05a-3833c5e36f1f}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SdkMessageName>cea_ApproveStep</SdkMessageName>
+  <PluginTypeName>CEAPlatform.Plugins.DecisionGuard, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2</PluginTypeName>
+  <PluginTypeId>2a56dc4d-16d4-f111-a05a-3833c5e36f1f</PluginTypeId>
+  <AsyncAutoDelete>0</AsyncAutoDelete>
+  <FilteringAttributes></FilteringAttributes>
+  <InvocationSource>0</InvocationSource>
+  <Mode>0</Mode>
+  <Rank>1</Rank>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>10</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages />
+</SdkMessageProcessingStep>

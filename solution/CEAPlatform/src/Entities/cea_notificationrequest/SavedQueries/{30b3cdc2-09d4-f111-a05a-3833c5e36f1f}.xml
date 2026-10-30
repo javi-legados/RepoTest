@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{30b3cdc2-09d4-f111-a05a-3833c5e36f1f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cea_eventtype" select="1" icon="1" preview="1">
+        <row name="result" id="cea_notificationrequestid">
+          <cell name="cea_eventtype" width="150" />
+          <cell name="cea_requestid" width="150" />
+          <cell name="cea_recipientgroup" width="110" />
+          <cell name="cea_recipientid" width="150" />
+          <cell name="cea_status" width="90" />
+          <cell name="createdon" width="130" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cea_notificationrequest">
+          <attribute name="cea_eventtype" />
+          <attribute name="cea_requestid" />
+          <attribute name="cea_recipientgroup" />
+          <attribute name="cea_recipientid" />
+          <attribute name="cea_status" />
+          <attribute name="createdon" />
+          <order attribute="createdon" descending="true" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Notification Log" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

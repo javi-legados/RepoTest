@@ -47,3 +47,16 @@ tests/api/
 ## Complexity Tracking
 
 No violations.
+
+## Deviation note (implementation)
+- Plug-ins and Custom APIs replace flows: cea_ResubmitRequest extends the Spec 6 action classes (Submit/Return/Release handle Review Type = Revision); the rejection (Spec 7 RejectStep) writes the cea_revisioncycle row.
+- Status values reuse Spec 6/7 values: 5 Revision Review, 9 Returned to Creator, 8 On Hold (Creator inactive uses the same On Hold value as approver hold, told apart by an empty Pending Approver). CreatorHold plug-in holds on user deactivation and resumes when an administrator reassigns the request to an active user.
+- Deferred: Creator reminder flow (T015), notifications (T014/T020, Spec 9), command-bar Resubmit button (T013), rejection banner and header revision count (T010/T011 partial), edge-case test script (T025), quickstart run (T026). Tests: tests/api/revision-rules.mjs.
+
+- Form UI (T010, T011, T013): implemented in the form script (equestForm.js) and the entity ribbon (RibbonDiff.xml): edit lock by status, rejection banner from the latest revision cycle, and Submit/Resubmit/Complete buttons shown by status (Resubmit has a confirm dialog, no correction-note prompt). Ribbon imported with pac solution pack/import; the import disables plug-in steps, so re-run register-plugins.mjs and re-enable steps afterwards.
+
+
+## Notas de implementación (cierre)
+- T014: CreatorHold es un plug-in (SetState de systemuser -> On Hold + alerta a administradores; reasignación reanuda). No es un flujo de Power Automate.
+- T020: notificaciones vía Notifier.Enqueue en SubmissionActions (Resubmitted, Released, Returned).
+- T025: cubierto en tests\api\revision-rules.mjs (12 PASS); recordatorio único cubierto por notification-rules (Spec 9). El caso de Creator desactivado no se prueba de forma automática (requiere desactivar un usuario real).

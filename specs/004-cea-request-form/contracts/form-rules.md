@@ -20,3 +20,8 @@
 | Submit: Detailed Description empty | Rejected | Block |
 | Option change hides fields | Hidden values cleared | Auto |
 | Currency change | Amounts unchanged | Label only |
+
+## Submit checks (handed to Spec 6)
+- Forecast percentages must add up to 100 (the difference is shown as Forecast Left).
+- Detailed Description is required at submit; Grand Total must be greater than 0.
+- Not enforced in Draft.

@@ -1,0 +1,18 @@
+<customapi uniquename="cea_ReassignApprover">
+  <allowedcustomprocessingsteptype>0</allowedcustomprocessingsteptype>
+  <bindingtype>0</bindingtype>
+  <description default="Reassign Approver">
+    <label description="Reassign Approver" languagecode="1033" />
+  </description>
+  <displayname default="Reassign Approver">
+    <label description="Reassign Approver" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isfunction>0</isfunction>
+  <isprivate>0</isprivate>
+  <name>Reassign Approver</name>
+  <plugintypeid>
+    <plugintypeexportkey>6ed68cca-61d4-f111-a05a-3833c5e36f1f</plugintypeexportkey>
+  </plugintypeid>
+  <workflowsdkstepenabled>0</workflowsdkstepenabled>
+</customapi>

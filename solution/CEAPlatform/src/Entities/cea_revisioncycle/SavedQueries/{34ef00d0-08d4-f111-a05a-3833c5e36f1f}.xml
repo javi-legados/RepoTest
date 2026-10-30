@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{34ef00d0-08d4-f111-a05a-3833c5e36f1f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cea_cycle" select="1" icon="1" preview="1">
+        <row name="result" id="cea_revisioncycleid">
+          <cell name="cea_cycle" width="70" />
+          <cell name="cea_rejectedbyid" width="150" />
+          <cell name="cea_rejectioncomments" width="250" />
+          <cell name="cea_rejectedon" width="130" />
+          <cell name="cea_resubmittedon" width="130" />
+          <cell name="cea_correctionnote" width="200" />
+          <cell name="cea_reviewoutcome" width="100" />
+          <cell name="cea_reviewedbyid" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cea_revisioncycle">
+          <attribute name="cea_cycle" />
+          <attribute name="cea_rejectedbyid" />
+          <attribute name="cea_rejectioncomments" />
+          <attribute name="cea_rejectedon" />
+          <attribute name="cea_resubmittedon" />
+          <attribute name="cea_correctionnote" />
+          <attribute name="cea_reviewoutcome" />
+          <attribute name="cea_reviewedbyid" />
+          <order attribute="cea_cycle" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Revision Cycles" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

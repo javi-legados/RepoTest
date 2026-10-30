@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{cf2317f8-0ad4-f111-a05a-3833c5e36f1f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cea_requestnumber" select="1" icon="1" preview="1">
+        <row name="result" id="cea_requestid">
+          <cell name="cea_requestnumber" width="150" />
+          <cell name="cea_projectname" width="250" />
+          <cell name="cea_completedbyid" width="150" />
+          <cell name="cea_completedon" width="130" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cea_request">
+          <attribute name="cea_requestnumber" />
+          <attribute name="cea_projectname" />
+          <attribute name="cea_completedbyid" />
+          <attribute name="cea_completedon" />
+          <order attribute="cea_completedon" descending="true" />
+          <filter>
+            <condition attribute="cea_status" operator="eq" value="7" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Completed Requests" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

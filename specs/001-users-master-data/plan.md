@@ -73,3 +73,8 @@ tests/
 | Violation | Why Needed | Simpler Alternative Rejected Because |
 |---|---|---|
 | Possible synchronous plug-in for deactivation blocking | Block deactivation when open requests exist must be server-side | Flows run asynchronously and cannot prevent the save |
+| `UserValidation` plug-in (PreValidation) | Mandatory data, email format, self-manager, and the `cea_managerregistered` flag must be enforced and computed server-side on every save path | Business rules only run in forms; flows run after the save |
+| `UserChangeRecorder` plug-in (PostOperation) instead of the planned Power Automate flow | Immutable history must be written even though no role has Create on `cea_userchangerecord`; role association is captured via Associate/Disassociate | A flow runs under the connection owner, cannot be provisioned from scripts here, and can miss changes when it fails |
+| `CatalogBusinessUnitSync` plug-in instead of the planned flow | Business Unit creation must succeed or fail together with the catalog entry | A flow could leave catalog entries without a Business Unit |
+| `CatalogDeleteGuard`, `CatalogHierarchyValidation`, `UserDeactivationGuard` plug-ins | Delete/hierarchy/deactivation blocks must prevent the save | Asynchronous flows cannot prevent a save |
+| Form script `cea_/scripts/userForm.js` instead of business rules | Required fields and the live "Manager is not registered" warning need a query on other users | Business rules cannot query other records; no `cea_incomplete` column was created, the Incomplete Users view filters on empty fields |

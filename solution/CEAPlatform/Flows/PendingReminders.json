@@ -1,0 +1,22 @@
+{
+  "displayName": "CEA - Process Notifications (scheduled)",
+  "flowId": "4278c0ea-a344-498d-b237-dcb6edf11a5f",
+  "definition": {
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": { "$authentication": { "defaultValue": {}, "type": "SecureObject" }, "$connections": { "defaultValue": {}, "type": "Object" } },
+    "triggers": { "Recurrence": { "recurrence": { "frequency": "Hour", "interval": 1 }, "type": "Recurrence" } },
+    "actions": {
+      "Process_notifications": {
+        "runAfter": {},
+        "type": "OpenApiConnection",
+        "inputs": {
+          "host": { "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps", "connectionName": "shared_commondataserviceforapps", "operationId": "PerformUnboundAction" },
+          "parameters": { "actionName": "cea_ProcessNotifications" },
+          "authentication": "@parameters('$authentication')"
+        }
+      }
+    }
+  },
+  "notes": "Hourly. Calls Custom API cea_ProcessNotifications, which enqueues Approver/Creator reminders (also covers Spec 8 CreatorReminder) and re-dispatches rows left Queued."
+}

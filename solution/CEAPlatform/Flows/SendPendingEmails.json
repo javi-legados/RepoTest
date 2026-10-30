@@ -1,0 +1,56 @@
+{
+  "displayName": "CEA - Send Pending Emails (Outlook)",
+  "flowId": "a95d5800-d217-4c7b-b961-1d69c265247c",
+  "definition": {
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": { "$authentication": { "defaultValue": {}, "type": "SecureObject" }, "$connections": { "defaultValue": {}, "type": "Object" } },
+    "triggers": {
+      "When_CEA_email_pending_send": {
+        "type": "OpenApiConnectionWebhook",
+        "inputs": {
+          "host": { "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps", "connectionName": "shared_commondataserviceforapps", "operationId": "SubscribeWebhookTrigger" },
+          "parameters": {
+            "subscriptionRequest/entityname": "email",
+            "subscriptionRequest/filterexpression": "statuscode eq 6 and startswith(subject,'CEA ')",
+            "subscriptionRequest/filteringattributes": "statuscode",
+            "subscriptionRequest/message": 3,
+            "subscriptionRequest/scope": 4
+          },
+          "authentication": "@parameters('$authentication')"
+        }
+      }
+    },
+    "actions": {
+      "Get_recipients": {
+        "runAfter": {},
+        "type": "OpenApiConnection",
+        "inputs": {
+          "host": { "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps", "connectionName": "shared_commondataserviceforapps", "operationId": "ListRecords" },
+          "parameters": { "$filter": "_activityid_value eq @{triggerOutputs()?['body/activityid']} and participationtypemask eq 2", "$select": "addressused", "entityName": "activityparties" },
+          "authentication": "@parameters('$authentication')"
+        }
+      },
+      "Select_addresses": {
+        "runAfter": { "Get_recipients": ["Succeeded"] },
+        "type": "Select",
+        "inputs": { "from": "@outputs('Get_recipients')?['body/value']", "select": "@item()?['addressused']" }
+      },
+      "Send_an_email_V2": {
+        "runAfter": { "Select_addresses": ["Succeeded"] },
+        "type": "OpenApiConnection",
+        "inputs": {
+          "host": { "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365", "connectionName": "shared_office365", "operationId": "SendEmailV2" },
+          "parameters": {
+            "emailMessage/Body": "@triggerOutputs()?['body/description']",
+            "emailMessage/Importance": "Normal",
+            "emailMessage/Subject": "@triggerOutputs()?['body/subject']",
+            "emailMessage/To": "@join(body('Select_addresses'), ';')"
+          },
+          "authentication": "@parameters('$authentication')"
+        }
+      }
+    }
+  },
+  "notes": "Delivers emails the Spec 9 plug-in leaves Pending Send (statuscode 6) because the org has no server-side sync mailbox. Verified: test email reached the inbox."
+}

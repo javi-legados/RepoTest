@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginAssemblyId="23f82a79-fcd3-f111-a05a-3833c5e36f1f" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/CEAPlatformPlugins-23F82A79-FCD3-F111-A05A-3833C5E36F1F/CEAPlatformPlugins.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.AdminAuditAssignment, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="4b571f71-0cd4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.AdminAuditAssignment">
+      <FriendlyName>CEAPlatform.Plugins.AdminAuditAssignment</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.AdminAuditRoleChange, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="eabb4455-6ed4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.AdminAuditRoleChange">
+      <FriendlyName>CEAPlatform.Plugins.AdminAuditRoleChange</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.ApproverAssignmentValidation, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="82656dab-01d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.ApproverAssignmentValidation">
+      <FriendlyName>CEAPlatform.Plugins.ApproverAssignmentValidation</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.ApproverChangePropagation, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="6fd68cca-61d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.ApproverChangePropagation">
+      <FriendlyName>CEAPlatform.Plugins.ApproverChangePropagation</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.ApproverHold, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="d6b42b4f-06d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.ApproverHold">
+      <FriendlyName>CEAPlatform.Plugins.ApproverHold</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.ApproverReassignmentFlag, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="eb85d96f-19d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.ApproverReassignmentFlag">
+      <FriendlyName>CEAPlatform.Plugins.ApproverReassignmentFlag</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.ApproveStep, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="d4b42b4f-06d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.ApproveStep">
+      <FriendlyName>CEAPlatform.Plugins.ApproveStep</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.AttachmentRules, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="6edae2f4-03d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.AttachmentRules">
+      <FriendlyName>CEAPlatform.Plugins.AttachmentRules</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.CatalogBusinessUnitSync, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="ce0128ec-fed3-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.CatalogBusinessUnitSync">
+      <FriendlyName>CEAPlatform.Plugins.CatalogBusinessUnitSync</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.CatalogDeleteGuard, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="cc0128ec-fed3-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.CatalogDeleteGuard">
+      <FriendlyName>CEAPlatform.Plugins.CatalogDeleteGuard</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.CatalogHierarchyValidation, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="cd0128ec-fed3-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.CatalogHierarchyValidation">
+      <FriendlyName>CEAPlatform.Plugins.CatalogHierarchyValidation</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.CompletedLockGuard, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="417d40e9-0ad4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.CompletedLockGuard">
+      <FriendlyName>CEAPlatform.Plugins.CompletedLockGuard</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.CompleteRequest, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="337d40e9-0ad4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.CompleteRequest">
+      <FriendlyName>CEAPlatform.Plugins.CompleteRequest</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.CreatorHold, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="3ba5dd65-08d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.CreatorHold">
+      <FriendlyName>CEAPlatform.Plugins.CreatorHold</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.DataCorrectionLogger, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="347d40e9-0ad4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.DataCorrectionLogger">
+      <FriendlyName>CEAPlatform.Plugins.DataCorrectionLogger</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.DecisionGuard, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="2a56dc4d-16d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.DecisionGuard">
+      <FriendlyName>CEAPlatform.Plugins.DecisionGuard</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.GrantApproverAccess, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="de29fdba-18d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.GrantApproverAccess">
+      <FriendlyName>CEAPlatform.Plugins.GrantApproverAccess</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.HistoryAttachmentCapture, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="43571f71-0cd4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.HistoryAttachmentCapture">
+      <FriendlyName>CEAPlatform.Plugins.HistoryAttachmentCapture</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.HistoryCreated, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="1c89056b-0cd4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.HistoryCreated">
+      <FriendlyName>CEAPlatform.Plugins.HistoryCreated</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.HistoryFieldChangeCapture, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="2589056b-0cd4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.HistoryFieldChangeCapture">
+      <FriendlyName>CEAPlatform.Plugins.HistoryFieldChangeCapture</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.HistoryImmutabilityGuard, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="0f89056b-0cd4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.HistoryImmutabilityGuard">
+      <FriendlyName>CEAPlatform.Plugins.HistoryImmutabilityGuard</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.HistoryStatusCapture, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="2089056b-0cd4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.HistoryStatusCapture">
+      <FriendlyName>CEAPlatform.Plugins.HistoryStatusCapture</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.LineEditLock, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="cee48117-18d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.LineEditLock">
+      <FriendlyName>CEAPlatform.Plugins.LineEditLock</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.LineRules, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="7e2886c1-02d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.LineRules">
+      <FriendlyName>CEAPlatform.Plugins.LineRules</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.NotificationDispatch, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="fff27280-09d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.NotificationDispatch">
+      <FriendlyName>CEAPlatform.Plugins.NotificationDispatch</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.NotifyReleaseBlocked, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="9cada8f8-71d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.NotifyReleaseBlocked">
+      <FriendlyName>CEAPlatform.Plugins.NotifyReleaseBlocked</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.ProcessNotifications, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="fef27280-09d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.ProcessNotifications">
+      <FriendlyName>CEAPlatform.Plugins.ProcessNotifications</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.ReassignApprover, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="6ed68cca-61d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.ReassignApprover">
+      <FriendlyName>CEAPlatform.Plugins.ReassignApprover</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.RejectStep, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="d5b42b4f-06d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.RejectStep">
+      <FriendlyName>CEAPlatform.Plugins.RejectStep</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.ReleaseToApproval, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="ea114c05-05d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.ReleaseToApproval">
+      <FriendlyName>CEAPlatform.Plugins.ReleaseToApproval</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.RequestPrefill, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="7a2886c1-02d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.RequestPrefill">
+      <FriendlyName>CEAPlatform.Plugins.RequestPrefill</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.RequestRules, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="732886c1-02d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.RequestRules">
+      <FriendlyName>CEAPlatform.Plugins.RequestRules</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.ResubmitRequest, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="3aa5dd65-08d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.ResubmitRequest">
+      <FriendlyName>CEAPlatform.Plugins.ResubmitRequest</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.ReturnToCreator, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="eb114c05-05d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.ReturnToCreator">
+      <FriendlyName>CEAPlatform.Plugins.ReturnToCreator</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.SubmitRequest, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="e9114c05-05d4-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.SubmitRequest">
+      <FriendlyName>CEAPlatform.Plugins.SubmitRequest</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.UserChangeRecorder, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="bd0128ec-fed3-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.UserChangeRecorder">
+      <FriendlyName>CEAPlatform.Plugins.UserChangeRecorder</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.UserDeactivationGuard, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="c80128ec-fed3-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.UserDeactivationGuard">
+      <FriendlyName>CEAPlatform.Plugins.UserDeactivationGuard</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CEAPlatform.Plugins.UserValidation, CEAPlatform.Plugins, Version=0.0.0.0, Culture=neutral, PublicKeyToken=136aa1a9a94248f2" PluginTypeId="26f82a79-fcd3-f111-a05a-3833c5e36f1f" Name="CEAPlatform.Plugins.UserValidation">
+      <FriendlyName>CEAPlatform.Plugins.UserValidation</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

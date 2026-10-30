@@ -1,0 +1,18 @@
+<customapi uniquename="cea_NotifyReleaseBlocked">
+  <allowedcustomprocessingsteptype>0</allowedcustomprocessingsteptype>
+  <bindingtype>0</bindingtype>
+  <description default="Notify Release Blocked">
+    <label description="Notify Release Blocked" languagecode="1033" />
+  </description>
+  <displayname default="Notify Release Blocked">
+    <label description="Notify Release Blocked" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isfunction>0</isfunction>
+  <isprivate>0</isprivate>
+  <name>Notify Release Blocked</name>
+  <plugintypeid>
+    <plugintypeexportkey>9cada8f8-71d4-f111-a05a-3833c5e36f1f</plugintypeexportkey>
+  </plugintypeid>
+  <workflowsdkstepenabled>0</workflowsdkstepenabled>
+</customapi>

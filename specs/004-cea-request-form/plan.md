@@ -46,4 +46,8 @@ tests/api/ tests/ui/
 
 ## Complexity Tracking
 
-No violations.
+Deviation: server-side rules and calculations are implemented with plug-ins (`RequestPlugins.cs`: `RequestRules`, `RequestPrefill`, `LineRules`) instead of business rules, flows and rollup columns. Reason: those features are not available or not reliable in this environment. Totals and forecast columns are plain decimals maintained by the plug-in; the Request ID format `CEA-{SEQNUM:6}` is provisional until Spec 11.
+
+## Closing notes
+- T016/T022: show/hide rules implemented in requestForm.js (Supplemental, metrics by category); required-ness enforced server-side.
+- T019/T026/T030/T031: the provisioned 'CEA Request' main form has sections, fields and 7 sub-grids (cost groups, forecast); not verified in a browser.

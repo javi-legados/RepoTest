@@ -1,0 +1,12 @@
+<customapirequestparameter uniquename="CorrectionNote">
+  <description default="CorrectionNote">
+    <label description="CorrectionNote" languagecode="1033" />
+  </description>
+  <displayname default="CorrectionNote">
+    <label description="CorrectionNote" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>1</isoptional>
+  <name>CorrectionNote</name>
+  <type>10</type>
+</customapirequestparameter>

@@ -1,0 +1,18 @@
+<customapi uniquename="cea_ProcessNotifications">
+  <allowedcustomprocessingsteptype>0</allowedcustomprocessingsteptype>
+  <bindingtype>0</bindingtype>
+  <description default="Queue reminders and retry queued notifications">
+    <label description="Queue reminders and retry queued notifications" languagecode="1033" />
+  </description>
+  <displayname default="Process Notifications">
+    <label description="Process Notifications" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isfunction>0</isfunction>
+  <isprivate>0</isprivate>
+  <name>Process Notifications</name>
+  <plugintypeid>
+    <plugintypeexportkey>fef27280-09d4-f111-a05a-3833c5e36f1f</plugintypeexportkey>
+  </plugintypeid>
+  <workflowsdkstepenabled>0</workflowsdkstepenabled>
+</customapi>

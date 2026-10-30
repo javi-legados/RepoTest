@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{9e4acb01-769a-4050-a416-38396719cfe7}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="T1" id="{e3e0d4d6-e5cf-408f-94fb-57198d4c267b}" IsUserDefined="1" showlabel="false" expanded="true">
+          <labels>
+            <label description="Assignment" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="T1_s" showlabel="false" showbar="false" id="{faf66c4e-348e-40d2-a311-fdec2c31de73}" IsUserDefined="1">
+                  <labels>
+                    <label description="Assignment" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4a2d5869-cbb5-4bd6-b7f5-3830e57ea128}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Business Unit" languagecode="1033" />
+                        </labels>
+                        <control id="cea_businessunitid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cea_businessunitid">
+                          <parameters>
+                            <DefaultViewId>{2B9F4D6A-8E31-4C57-B0A4-5D7E9F1C3B82}</DefaultViewId>
+                            <AvailableViewIds>{2B9F4D6A-8E31-4C57-B0A4-5D7E9F1C3B82}</AvailableViewIds>
+                            <DisableViewPicker>true</DisableViewPicker>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8ba7d582-176e-4877-a3d4-4ae8a703fb20}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Role Type" languagecode="1033" />
+                        </labels>
+                        <control id="cea_roletype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cea_roletype" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bd2ab52d-aeb7-4565-ae33-c23c21446536}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Approver" languagecode="1033" />
+                        </labels>
+                        <control id="cea_approverid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cea_approverid">
+                          <parameters>
+                            <DefaultViewId>{7C3E1A52-5B0D-4E1F-9A2B-0C6D8E4F1A73}</DefaultViewId>
+                            <AvailableViewIds>{7C3E1A52-5B0D-4E1F-9A2B-0C6D8E4F1A73}</AvailableViewIds>
+                            <DisableViewPicker>true</DisableViewPicker>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{21b84b32-9e90-4029-82b5-2f31b563861e}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="State" languagecode="1033" />
+                        </labels>
+                        <control id="cea_status" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cea_status" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

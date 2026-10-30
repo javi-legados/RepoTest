@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{951083d3-fdd3-f111-a05a-3833c5e36f1f}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="CEA_TAB" id="{5ccb74ff-7ad5-41e7-af4a-d640879ba9b5}" IsUserDefined="1" showlabel="true" expanded="true">
+          <labels>
+            <label description="CEA User" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="CEA_SECTION" showlabel="true" showbar="false" id="{e6877b36-442c-48b2-b9c8-4c5bd9e22c1f}" IsUserDefined="1">
+                  <labels>
+                    <label description="User directory" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0e3b6c77-dff1-42f8-8a02-aef1bd8d291d}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="SAP Number" languagecode="1033" />
+                        </labels>
+                        <control id="cea_sapnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cea_sapnumber" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8eebc1b4-f252-40ad-9c56-5746e9a83b29}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="lastname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="lastname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{576ede85-5665-413f-b7bf-94526d2da4b8}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="internalemailaddress" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="internalemailaddress" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5ced5e76-493a-45b9-b2a2-130bcd57742e}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Department" languagecode="1033" />
+                        </labels>
+                        <control id="cea_department" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cea_department" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6d5d6379-45b6-44ab-b3a7-3d16351752a0}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Manager Name" languagecode="1033" />
+                        </labels>
+                        <control id="cea_managername" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cea_managername" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1cae7cf6-1b01-4014-a1dd-f248d123e3e4}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Manager Email" languagecode="1033" />
+                        </labels>
+                        <control id="cea_manageremail" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cea_manageremail" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{12707d9a-c5cc-4000-8ec1-978f783c0869}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Manager Registered" languagecode="1033" />
+                        </labels>
+                        <control id="cea_managerregistered" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cea_managerregistered" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0d10275f-41fe-4fce-bbe9-4f1488e73d1d}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Business Unit" languagecode="1033" />
+                        </labels>
+                        <control id="businessunitid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="businessunitid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="CEA.UserForm.onLoad" libraryName="cea_/scripts/userForm.js" handlerUniqueId="{18ffdab4-2e70-4066-adc5-3177c3b62e16}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <formLibraries>
+        <Library name="cea_/scripts/userForm.js" libraryUniqueId="{09732971-62b4-4ad0-b411-925acbf851cb}" />
+      </formLibraries>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="CEA User" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Directory fields required by the CEA platform" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

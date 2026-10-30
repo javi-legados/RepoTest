@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{3d22c833-00d4-f111-a05a-3833c5e36f1f}" name="CEA Creators" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsCustomizable>1</IsCustomizable>
+  <IsAutoAssigned>0</IsAutoAssigned>
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendcea_costline" level="Basic" />
+    <RolePrivilege name="prvAppendcea_forecastline" level="Basic" />
+    <RolePrivilege name="prvAppendcea_request" level="Basic" />
+    <RolePrivilege name="prvAppendcea_requestattachment" level="Basic" />
+    <RolePrivilege name="prvAppendTocea_costline" level="Basic" />
+    <RolePrivilege name="prvAppendTocea_forecastline" level="Basic" />
+    <RolePrivilege name="prvAppendTocea_request" level="Basic" />
+    <RolePrivilege name="prvAppendTocea_requestattachment" level="Basic" />
+    <RolePrivilege name="prvAppendTocea_resolvedapprover" level="Basic" />
+    <RolePrivilege name="prvCreatecea_costline" level="Basic" />
+    <RolePrivilege name="prvCreatecea_forecastline" level="Basic" />
+    <RolePrivilege name="prvCreatecea_request" level="Basic" />
+    <RolePrivilege name="prvCreatecea_requestattachment" level="Basic" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvDeletecea_costline" level="Basic" />
+    <RolePrivilege name="prvDeletecea_forecastline" level="Basic" />
+    <RolePrivilege name="prvDeletecea_request" level="Basic" />
+    <RolePrivilege name="prvDeletecea_requestattachment" level="Basic" />
+    <RolePrivilege name="prvReadBusinessUnit" level="Global" />
+    <RolePrivilege name="prvReadcea_approvaldecision" level="Basic" />
+    <RolePrivilege name="prvReadcea_company" level="Global" />
+    <RolePrivilege name="prvReadcea_costline" level="Basic" />
+    <RolePrivilege name="prvReadcea_forecastline" level="Basic" />
+    <RolePrivilege name="prvReadcea_historyentry" level="Basic" />
+    <RolePrivilege name="prvReadcea_initialreview" level="Basic" />
+    <RolePrivilege name="prvReadcea_plant" level="Global" />
+    <RolePrivilege name="prvReadcea_platformsetting" level="Global" />
+    <RolePrivilege name="prvReadcea_region" level="Global" />
+    <RolePrivilege name="prvReadcea_request" level="Basic" />
+    <RolePrivilege name="prvReadcea_requestattachment" level="Basic" />
+    <RolePrivilege name="prvReadcea_resolvedapprover" level="Basic" />
+    <RolePrivilege name="prvReadcea_revisioncycle" level="Basic" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvReadUser" level="Global" />
+    <RolePrivilege name="prvWritecea_costline" level="Basic" />
+    <RolePrivilege name="prvWritecea_forecastline" level="Basic" />
+    <RolePrivilege name="prvWritecea_request" level="Basic" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+  </RolePrivileges>
+</Role>

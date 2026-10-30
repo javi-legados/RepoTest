@@ -51,3 +51,15 @@ tests/api/     # Resolution per Creator BU type
 | Violation | Why Needed | Simpler Alternative Rejected Because |
 |---|---|---|
 | Plug-in for resolution/blocking | Submission must be blocked synchronously | Flow cannot stop the status change |
+
+| Plug-in ApproverAssignmentValidation replaces business rules and alternate key (T005/T012) | Lookup columns cannot be alternate keys; business rules cannot query roles | Business rules cannot enforce uniqueness or role membership |
+| cea_resolvedapprover is user-owned | Org-owned tables only allow Global depth, so 'own rows' read is impossible | Org-owned would expose all rows to Creators |
+
+## Implementation notes (closing)
+- Resolution lives in ChainAdvance.Resolve (ApprovalChain.cs, Spec 7), not a separate ResolveApprovers.cs; it throws a level-named error in the same transaction (T015-T017, T021, T022, T025).
+- T018/T019/T024: plug-in ApproverChangePropagation (PostOperation Update of cea_approverassignment) replaces the flows; follows the new approver or sets Needs Reassignment. User deactivation is blocked by UserDeactivationGuard (Spec 1).
+- T026/T027: Custom API cea_ReassignApprover (ReassignApprover.cs) instead of a flow; admin only, Reason required, writes cea_reassignmentrecord. Provisioned by tools/provision-003-api.mjs. Test: tests/api/approver-reassignment-rules.mjs (success path needs a user with CEA Internal Approvals).
+- T023: view 'Business Units without approver (Plants)' created by provision-003.mjs.
+
+
+> Nota T010/T011/T028: formulario Approver Assignment (BU restringida a la vista 'Plants and Regions', Approver a 'Assignable Approvers') y formulario Resolved Approver con boton 'Reassign approver' (ribbon + CEA.RequestForm.reassignApprover -> cea_ReassignApprover, solo admins y Decided = No), aprovisionados con tools\provision-003-forms.mjs en lugar de XML en ModelDrivenApp\Forms.

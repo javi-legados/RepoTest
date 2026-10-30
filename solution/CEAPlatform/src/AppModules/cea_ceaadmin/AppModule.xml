@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>cea_ceaadmin</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>5b3630c6-fcd3-f111-a05a-3833c5e36f1f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="entity" />
+    <AppModuleComponent type="1" schemaName="entity" />
+    <AppModuleComponent type="1" schemaName="entity" />
+    <AppModuleComponent type="1" schemaName="entity" />
+    <AppModuleComponent type="1" schemaName="entity" />
+    <AppModuleComponent type="1" schemaName="entity" />
+    <AppModuleComponent type="1" schemaName="role" />
+    <AppModuleComponent type="26" id="{43ed80a4-fcd3-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{47ed80a4-fcd3-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{4eed80a4-fcd3-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{51ed80a4-fcd3-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{54ed80a4-fcd3-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{154eaab8-fcd3-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{8922a770-00d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{729fc77e-01d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{749fc77e-01d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{769fc77e-01d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{ac6a181e-03d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{ae6a181e-03d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{b06a181e-03d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{b26a181e-03d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{4464d118-04d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{8e542c4b-05d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{90542c4b-05d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{b8c59a69-07d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{bac59a69-07d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{bcc59a69-07d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{bec59a69-07d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{34ef00d0-08d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{30b3cdc2-09d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{32b3cdc2-09d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{34b3cdc2-09d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{cd2317f8-0ad4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{cf2317f8-0ad4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{d12317f8-0ad4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{dd226648-0cd4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{df226648-0cd4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{82567d7b-0cd4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="26" id="{3b403950-2316-48d0-a31c-9cf754f19bc2}" />
+    <AppModuleComponent type="60" id="{951083d3-fdd3-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="60" id="{b46a181e-03d4-f111-a05a-3833c5e36f1f}" />
+    <AppModuleComponent type="62" schemaName="cea_ceaadmin" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="CEA Administration" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="CEA admin" languagecode="1033" />
+  </Descriptions>
+  <appsettings>
+    <appsetting settingdefinitionid.uniquename="AppChannel">
+      <iscustomizable>1</iscustomizable>
+      <value>1</value>
+    </appsetting>
+  </appsettings>
+</AppModule>

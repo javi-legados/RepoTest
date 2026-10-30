@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{b46a181e-03d4-f111-a05a-3833c5e36f1f}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="T1" id="{77384935-1b40-4c9f-ab82-701f1351b916}" IsUserDefined="1" showlabel="true" expanded="true">
+          <labels>
+            <label description="Requester Data" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="T1_s" showlabel="false" showbar="false" id="{3dc09ece-a976-4d7c-984d-dae20fd37fbf}" IsUserDefined="1">
+                  <labels>
+                    <label description="Requester Data" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{40b432c5-d39d-4efb-aa02-b25d6eb058cf}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Request ID" languagecode="1033" />
+                        </labels>
+                        <control id="cea_requestnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cea_requestnumber" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{21517941-acab-4f35-9eb4-7ff69591e392}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="cea_status" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cea_status" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f94dd52d-7b12-4f09-a6db-f134bfce18d2}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Project Manager" languagecode="1033" />
+                        </labels>
+                        <control id="cea_projectmanager" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cea_projectmanager" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5704caa1-1e3b-42da-be8d-b544a3994754}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Location" languagecode="1033" />
+                        </labels>
+                        <control id="cea_location" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cea_location" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{75996cad-69f7-414f-a2db-ce390bc6d0fb}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Department" languagecode="1033" />
+                        </labels>
+                        <control id="cea_department" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cea_department" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{181db7f6-fb2f-4eaa-b507-83384c1b51bb}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Date" languagecode="1033" />
+                        </labels>
+                        <control id="cea_date" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cea_date" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="T2" id="{6e2e0efb-c69f-412b-bc9c-a2cbc86cb5a2}" IsUserDefined="1" showlabel="true" expanded="true">
+          <labels>
+            <label description="Project Category" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="T2_s" showlabel="false" showbar="false" id="{1b1f9fb9-ee38-4e15-9e9b-90f4b01764b8}" IsUserDefined="1">
+                  <labels>
+                    <label description="Project Category" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ef6eb842-8755-4821-9c87-97a210c2fe24}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Category" languagecode="1033" />
+                        </labels>
+                        <control id="cea_category" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cea_category" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fb07dad2-ff38-4b02-ba07-74bd30d99b1d}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Supplemental" languagecode="1033" />
+                        </labels>
+                        <control id="cea_supplemental" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cea_supplemental" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6f559ca7-e5ce-40ed-9485-7b182e998345}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Existing CEA Reference" languagecode="1033" />
+                        </labels>
+                        <control id="cea_existingceareferenceid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cea_existingceareferenceid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8bb70112-7c75-4322-a02c-742a7677efbe}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Project Name" languagecode="1033" />
+                        </labels>
+                        <control id="cea_projectname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cea_projectname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4dc63c56-dfcd-4ef6-be4e-edf633b44e00}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Description Summary" languagecode="1033" />
+                        </labels>
+                        <control id="cea_descriptionsummary" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cea_descriptionsummary" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a92ed688-4604-4e73-88b0-59b0fa9b20c4}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Pay Back" languagecode="1033" />
+                        </labels>
+                        <control id="cea_payback" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cea_payback" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{08b37b96-4832-4484-a7b1-c1c31d13aaee}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="IRR" languagecode="1033" />
+                        </labels>
+                        <control id="cea_irr" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_irr" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fa890eb5-75d0-4532-875b-286fcc1c6998}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="NPV" languagecode="1033" />
+                        </labels>
+                        <control id="cea_npv" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_npv" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="T3" id="{afdc667c-35de-4d81-b648-d8542fcf0e56}" IsUserDefined="1" showlabel="true" expanded="true">
+          <labels>
+            <label description="Schedule and Project" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="T3_s" showlabel="false" showbar="false" id="{e4021fde-4452-4a60-ba9f-000f3edd69a3}" IsUserDefined="1">
+                  <labels>
+                    <label description="Schedule and Project" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8114234e-da12-4d8e-808a-01ec986c6c30}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Project Location" languagecode="1033" />
+                        </labels>
+                        <control id="cea_projectlocationid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cea_projectlocationid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4e439c3e-d7ee-48b9-a3ef-6c1d44f964ea}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="cea_startdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cea_startdate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f1b8e04f-bd70-4c75-9f46-bb4c93e4ce0d}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Estimated Completion Date" languagecode="1033" />
+                        </labels>
+                        <control id="cea_estimatedcompletiondate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cea_estimatedcompletiondate" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="T4" id="{1561b937-4e47-4e17-b3c8-7b8dd33db74b}" IsUserDefined="1" showlabel="true" expanded="true">
+          <labels>
+            <label description="Financial Data" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="T4_s" showlabel="false" showbar="false" id="{f260a1b6-d23c-4c21-b01e-03b6864754c7}" IsUserDefined="1">
+                  <labels>
+                    <label description="Financial Data" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ae50ba79-ba6b-4e03-9391-9b4550c72da2}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Currency" languagecode="1033" />
+                        </labels>
+                        <control id="cea_currency" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cea_currency" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5ca8abe6-d8da-4c34-8eb2-44cf769c2553}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Project in Plan" languagecode="1033" />
+                        </labels>
+                        <control id="cea_projectinplan" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cea_projectinplan" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{035faa38-3fcd-4181-8ade-fd72c5bcd785}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Budgeted Amount" languagecode="1033" />
+                        </labels>
+                        <control id="cea_budgetedamount" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_budgetedamount" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{50466aaa-f5c8-43d2-92c7-ff02aa453947}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Investment Required" languagecode="1033" />
+                        </labels>
+                        <control id="cea_investmentrequired" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_investmentrequired" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{df551439-8f37-400b-8fd1-8968e05b75dc}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Non-capitalized Expenses" languagecode="1033" />
+                        </labels>
+                        <control id="cea_noncapitalizedexpenses" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_noncapitalizedexpenses" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a57fc7ba-3a07-435c-8275-c82462cbf985}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Write-off" languagecode="1033" />
+                        </labels>
+                        <control id="cea_writeoff" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_writeoff" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="T5" id="{f6a1a8e3-196a-43f0-801b-7f29bd592bf2}" IsUserDefined="1" showlabel="true" expanded="true">
+          <labels>
+            <label description="Monetary Values" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="T5_s" showlabel="false" showbar="false" id="{8b323ff1-8157-4e9b-b8bc-c35fd1c21e74}" IsUserDefined="1">
+                  <labels>
+                    <label description="Monetary Values" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{aa512b55-b22f-4e69-a741-18c290df3ab3}" showlabel="true" colspan="1" rowspan="6">
+                        <labels>
+                          <label description="Cost Lines" languagecode="1033" />
+                        </labels>
+                        <control id="grid_cost" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>b06a181e-03d4-f111-a05a-3833c5e36f1f</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>cea_request_costline</RelationshipName>
+                            <TargetEntityType>cea_costline</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds />
+                            <RecordsPerPage>20</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0f24e325-8d21-4602-a071-8aaa883e835a}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Subtotal 1" languagecode="1033" />
+                        </labels>
+                        <control id="cea_subtotal1" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_subtotal1" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bfcb544d-e067-40de-a449-d50643e23e77}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Subtotal 2" languagecode="1033" />
+                        </labels>
+                        <control id="cea_subtotal2" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_subtotal2" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2ee1b538-2789-4253-b428-2c83ea10d979}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Subtotal 3" languagecode="1033" />
+                        </labels>
+                        <control id="cea_subtotal3" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_subtotal3" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{97254efd-9e93-4a2d-b04a-42e965a6de6a}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Subtotal 4" languagecode="1033" />
+                        </labels>
+                        <control id="cea_subtotal4" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_subtotal4" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5945fbaa-55ca-4142-b793-cb59b0b02886}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Subtotal 5" languagecode="1033" />
+                        </labels>
+                        <control id="cea_subtotal5" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_subtotal5" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a15f68d6-9ad5-4a9d-b0d3-d62e9b488694}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Grand Total" languagecode="1033" />
+                        </labels>
+                        <control id="cea_grandtotal" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_grandtotal" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="T6" id="{1241c111-d82d-407e-b1e8-5f39381a5c6a}" IsUserDefined="1" showlabel="true" expanded="true">
+          <labels>
+            <label description="Spending Forecast" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="T6_s" showlabel="false" showbar="false" id="{92192174-96e4-4bc6-b27c-1a403512c313}" IsUserDefined="1">
+                  <labels>
+                    <label description="Spending Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1dd47889-e097-4555-a999-7105ecb4efcc}" showlabel="true" colspan="1" rowspan="6">
+                        <labels>
+                          <label description="Forecast Lines" languagecode="1033" />
+                        </labels>
+                        <control id="grid_fc" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>b26a181e-03d4-f111-a05a-3833c5e36f1f</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>cea_request_forecastline</RelationshipName>
+                            <TargetEntityType>cea_forecastline</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds />
+                            <RecordsPerPage>20</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{11236a0b-d349-4290-a817-a809effca829}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Forecast Calculated" languagecode="1033" />
+                        </labels>
+                        <control id="cea_forecastcalculated" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_forecastcalculated" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1225bf31-b384-42b2-b808-3b5357dcf897}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Forecast %" languagecode="1033" />
+                        </labels>
+                        <control id="cea_forecastpercentage" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_forecastpercentage" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7403b00d-fce7-48d3-bdcc-af2f24299e43}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Forecast Left" languagecode="1033" />
+                        </labels>
+                        <control id="cea_forecastleft" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079AFEF7}" datafieldname="cea_forecastleft" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="T7" id="{225e4ac7-eb99-4ce4-86ae-bf14bda1407c}" IsUserDefined="1" showlabel="true" expanded="true">
+          <labels>
+            <label description="Project Details" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="T7_s" showlabel="false" showbar="false" id="{0292ac2e-7e17-4b6b-8729-8f259fccd3c4}" IsUserDefined="1">
+                  <labels>
+                    <label description="Project Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{61746ac8-42f7-4200-b7c3-f62d0690dcb1}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Detailed Description" languagecode="1033" />
+                        </labels>
+                        <control id="cea_detaileddescription" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cea_detaileddescription" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="T8" id="{ec70616d-4ce7-433e-a058-393f88e2c26a}" IsUserDefined="1" showlabel="true" expanded="true">
+          <labels>
+            <label description="Attachments" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="T8_s" showlabel="false" showbar="false" id="{30d74174-20fb-4926-9678-6551d35c88e1}" IsUserDefined="1">
+                  <labels>
+                    <label description="Attachments" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f31e1862-b959-41cc-b2cb-1d0a35e59c3d}" showlabel="true" colspan="1" rowspan="6">
+                        <labels>
+                          <label description="Attachments" languagecode="1033" />
+                        </labels>
+                        <control id="grid_att" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>4464d118-04d4-f111-a05a-3833c5e36f1f</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>cea_request_attachment</RelationshipName>
+                            <TargetEntityType>cea_requestattachment</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds />
+                            <RecordsPerPage>20</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="T9" id="{850614a5-5a73-4206-8b60-0037499a257c}" IsUserDefined="1" showlabel="true" expanded="true">
+          <labels>
+            <label description="Approval" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="T9_s" showlabel="false" showbar="false" id="{05559208-97d4-42d9-a162-95ee21df8e7b}" IsUserDefined="1">
+                  <labels>
+                    <label description="Approval" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b3a42242-a842-4746-9f65-5652dbdea2f3}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Current Level" languagecode="1033" />
+                        </labels>
+                        <control id="cea_currentlevel" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cea_currentlevel" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{67198695-6d3f-4c13-a4ba-91dc6d7266a1}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Pending Approver" languagecode="1033" />
+                        </labels>
+                        <control id="cea_pendingapproverid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cea_pendingapproverid" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5d6d4647-92cb-405f-8379-3996a76ab494}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Cycle" languagecode="1033" />
+                        </labels>
+                        <control id="cea_cycle" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cea_cycle" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{25c8ec09-77f9-4993-9718-1a100faf996c}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Submitted By" languagecode="1033" />
+                        </labels>
+                        <control id="cea_submittedbyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cea_submittedbyid" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{284978dc-ee96-4c80-bf27-153cf5327568}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Submitted On" languagecode="1033" />
+                        </labels>
+                        <control id="cea_submittedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cea_submittedon" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{44327b16-63c6-4d7d-9e5e-07afdeea6a30}" showlabel="true" colspan="1" rowspan="6">
+                        <labels>
+                          <label description="Initial Reviews" languagecode="1033" />
+                        </labels>
+                        <control id="grid_ir" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>90542c4b-05d4-f111-a05a-3833c5e36f1f</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>cea_request_initialreview</RelationshipName>
+                            <TargetEntityType>cea_initialreview</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds />
+                            <RecordsPerPage>20</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1abcdbf0-1965-4d5b-8980-1029c9a50324}" showlabel="true" colspan="1" rowspan="6">
+                        <labels>
+                          <label description="Resolved Approvers" languagecode="1033" />
+                        </labels>
+                        <control id="grid_steps" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>b8c59a69-07d4-f111-a05a-3833c5e36f1f</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>cea_request_resolvedapprover</RelationshipName>
+                            <TargetEntityType>cea_resolvedapprover</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds />
+                            <RecordsPerPage>20</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{97e4d52e-5c98-4a3a-a366-1af32b9f7a2a}" showlabel="true" colspan="1" rowspan="6">
+                        <labels>
+                          <label description="Approval Decisions" languagecode="1033" />
+                        </labels>
+                        <control id="grid_dec" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>bac59a69-07d4-f111-a05a-3833c5e36f1f</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>cea_request_approvaldecision</RelationshipName>
+                            <TargetEntityType>cea_approvaldecision</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds />
+                            <RecordsPerPage>20</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="T10" id="{50967536-a082-4da3-bdf0-38e74383e625}" IsUserDefined="1" showlabel="true" expanded="true">
+          <labels>
+            <label description="Revision History" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="T10_s" showlabel="false" showbar="false" id="{c9aec5ec-b775-4e7a-ba68-00f6d628525e}" IsUserDefined="1">
+                  <labels>
+                    <label description="Revision History" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9608ee88-9f53-4dc8-92b7-a16e6f76d94f}" showlabel="true" colspan="1" rowspan="6">
+                        <labels>
+                          <label description="Revision History" languagecode="1033" />
+                        </labels>
+                        <control id="grid_rev" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>34ef00d0-08d4-f111-a05a-3833c5e36f1f</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>cea_request_revisioncycle</RelationshipName>
+                            <TargetEntityType>cea_revisioncycle</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds />
+                            <RecordsPerPage>20</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="T11" id="{6ac7ff22-e958-4bed-befa-712f7b2af57b}" IsUserDefined="1" showlabel="true" expanded="true">
+          <labels>
+            <label description="History" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="T11_s" showlabel="false" showbar="false" id="{1782fffd-4001-47e5-a736-2b34809a3246}" IsUserDefined="1">
+                  <labels>
+                    <label description="History" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{67b7999a-00b4-42e9-be5a-e5516fe167ec}" showlabel="true" colspan="1" rowspan="6">
+                        <labels>
+                          <label description="History" languagecode="1033" />
+                        </labels>
+                        <control id="grid_hist" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>82567d7b-0cd4-f111-a05a-3833c5e36f1f</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>cea_request_historyentry</RelationshipName>
+                            <TargetEntityType>cea_costline</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds />
+                            <RecordsPerPage>20</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="CEA.RequestForm.onLoad" libraryName="cea_/scripts/requestForm.js" handlerUniqueId="{90ab0d4d-2ccc-4f71-bf90-5d0174fe0222}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <formLibraries>
+        <Library name="cea_/scripts/requestForm.js" libraryUniqueId="{bba5e90e-0ec0-41d1-bbd2-b5ae1c3508ba}" />
+      </formLibraries>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="CEA Request" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

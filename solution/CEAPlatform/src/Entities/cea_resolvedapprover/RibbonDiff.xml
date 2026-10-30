@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="cea.cea_resolvedapprover.Reassign.CustomAction" Location="Mscrm.Form.cea_resolvedapprover.MainTab.Save.Controls._children" Sequence="40">
+      <CommandUIDefinition>
+        <Button Id="cea.cea_resolvedapprover.Reassign" Command="cea.cea_resolvedapprover.Reassign.Command" LabelText="Reassign approver" ToolTipTitle="Reassign approver" ToolTipDescription="Reassign this pending approval step to another approver" Sequence="40" TemplateAlias="o1" ModernImage="Assign" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="cea.cea_resolvedapprover.Reassign.Command">
+      <EnableRules>
+        <EnableRule Id="cea.cea_resolvedapprover.CanReassign.Enable" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="CEA.RequestForm.reassignApprover" Library="$webresource:cea_/scripts/requestForm.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules>
+      <EnableRule Id="cea.cea_resolvedapprover.CanReassign.Enable">
+        <CustomRule FunctionName="CEA.RequestForm.canReassign" Library="$webresource:cea_/scripts/requestForm.js" Default="false">
+          <CrmParameter Value="PrimaryControl" />
+        </CustomRule>
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels />
+</RibbonDiffXml>

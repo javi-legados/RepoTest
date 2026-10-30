@@ -1,0 +1,13 @@
+<customapirequestparameter uniquename="Request">
+  <description default="Request">
+    <label description="Request" languagecode="1033" />
+  </description>
+  <displayname default="Request">
+    <label description="Request" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>0</isoptional>
+  <logicalentityname>cea_request</logicalentityname>
+  <name>Request</name>
+  <type>5</type>
+</customapirequestparameter>

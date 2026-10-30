@@ -46,3 +46,13 @@ tests/flows/
 ## Complexity Tracking
 
 No violations.
+
+
+## Implementation deviation (dev environment)
+Notifications are implemented with plug-ins instead of cloud flows: Notifier.Enqueue (producers in Specs 6-8), async post-op NotificationDispatch on create of cea_notificationrequest (email activity, 3 attempts, outcomes, consolidation by Event Id, invalid-recipient skip, alerts without recursion) and the Custom API cea_ProcessNotifications for reminders/retries (to be scheduled later). The email is not linked to the request (egardingobjectid) because the table is not activity-enabled. Alert Blocked cannot persist when the failing release rolls back; the error is shown to the performing administrator. Tested by tests/api/notification-rules.mjs.
+
+
+## Notas de implementación (cierre)
+- Desviación respecto a 'No custom code': el envío y la cola se implementaron como plug-ins/Custom API (Notifications.cs, cea_ProcessNotifications) con un flujo programado (SendPendingEmails, PendingReminders). Justificación: transaccionalidad y consistencia con el resto de la plataforma.
+- T036: cubierto por tests\api\notification-rules.mjs (8 PASS, 0 FAIL).
+- T022, T035, T037, T038 requieren ejecución manual de flujos/correo real; T040 es el export final.

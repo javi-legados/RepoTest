@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{2b9f4d6a-8e31-4c57-b0a4-5d7e9f1c3b82}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="businessunitid">
+          <cell name="name" width="240" />
+          <cell name="cea_level" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="businessunit">
+          <attribute name="name" />
+          <attribute name="cea_level" />
+          <attribute name="businessunitid" />
+          <order attribute="name" descending="false" />
+          <filter type="and">
+            <condition attribute="cea_level" operator="in">
+              <value>3</value>
+              <value>4</value>
+            </condition>
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Plants and Regions" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
