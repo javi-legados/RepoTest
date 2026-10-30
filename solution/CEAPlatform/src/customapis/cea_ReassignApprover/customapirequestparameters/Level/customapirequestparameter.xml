@@ -1,0 +1,12 @@
+<customapirequestparameter uniquename="Level">
+  <description default="Level">
+    <label description="Level" languagecode="1033" />
+  </description>
+  <displayname default="Level">
+    <label description="Level" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>0</isoptional>
+  <name>Level</name>
+  <type>7</type>
+</customapirequestparameter>

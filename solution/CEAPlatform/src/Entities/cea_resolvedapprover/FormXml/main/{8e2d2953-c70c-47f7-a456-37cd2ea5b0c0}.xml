@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{8e2d2953-c70c-47f7-a456-37cd2ea5b0c0}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="T1" id="{d1e297d2-7979-4d9a-8a9f-354b5be95285}" IsUserDefined="1" showlabel="false" expanded="true">
+          <labels>
+            <label description="Resolved Approver" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="T1_s" showlabel="false" showbar="false" id="{cde1eceb-6129-4ee8-9b13-a437e3567a61}" IsUserDefined="1">
+                  <labels>
+                    <label description="Resolved Approver" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{de907b34-cc3a-4fee-8cb8-64c3e3ecd344}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Request Reference" languagecode="1033" />
+                        </labels>
+                        <control id="cea_requestreference" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cea_requestreference" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{90f6acc3-6e08-4966-9a57-6bbf83f5cb45}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Request" languagecode="1033" />
+                        </labels>
+                        <control id="cea_requestid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cea_requestid" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7400404a-0b0d-44ef-89b8-100860c583d0}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Level" languagecode="1033" />
+                        </labels>
+                        <control id="cea_level" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cea_level" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bcd0a5e9-16a4-415e-82a0-095667fb57ed}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Approver" languagecode="1033" />
+                        </labels>
+                        <control id="cea_approverid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cea_approverid" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b6ab1e16-2201-443b-985e-baa0206c180f}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Step Status" languagecode="1033" />
+                        </labels>
+                        <control id="cea_stepstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cea_stepstatus" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7f1ab525-e4de-47ce-a75b-344c1f1327b9}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Decided" languagecode="1033" />
+                        </labels>
+                        <control id="cea_decided" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cea_decided" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c7e0a2fa-7d6a-426a-83a9-4c61634630b6}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Needs Reassignment" languagecode="1033" />
+                        </labels>
+                        <control id="cea_needsreassignment" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cea_needsreassignment" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <formLibraries>
+        <Library name="cea_/scripts/requestForm.js" libraryUniqueId="{683a4f8b-518a-479d-b783-f4da6b52f159}" />
+      </formLibraries>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,13 @@
+<customapirequestparameter uniquename="NewApprover">
+  <description default="NewApprover">
+    <label description="NewApprover" languagecode="1033" />
+  </description>
+  <displayname default="NewApprover">
+    <label description="NewApprover" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>0</isoptional>
+  <logicalentityname>systemuser</logicalentityname>
+  <name>NewApprover</name>
+  <type>5</type>
+</customapirequestparameter>

@@ -51,3 +51,19 @@ tests/api/
 | Violation | Why Needed | Simpler Alternative Rejected Because |
 |---|---|---|
 | Completed-lock and correction logging in plug-in | Field-level old/new capture and absolute lock must be server-side | Auditing alone is not filtered/readable by role |
+
+
+## Implementation deviation (dev environment)
+Implemented with plug-ins and Custom APIs: new status value 10 'Final Processing' (value 6 'Approved' is no longer set; the last approval moves directly to 10), cea_CompleteRequest API, DataCorrectionLogger (request, cost and forecast lines), CompletedLockGuard (rejects every change to the request and lines once Completed, for every role, plus attachments in AttachmentRules) and final-file rule (Package=Final only in Final Processing, admin only). Views and sitemap added. Notifications reuse Spec 9 (AllApproved at entry, FinalCompleted at completion). Not done: dedicated final form/command button, optimistic-concurrency message (T013/T025), read access of Creators to Data Correction Records. Tested by tests/api/final-processing-rules.mjs.
+
+
+## Notas de implementación (cierre)
+- T015: botón 'Complete' en el formulario principal (Spec 6), visible solo en estado 10 y limitado a administradores; llama a la Custom API CompleteRequest.
+- T018/T019/T020: notificaciones vía Notifier.Enqueue (AllApproved a administradores y Creator al pasar a Final Processing; FinalCompleted al Creator). Sin administradores activos, el destinatario queda Skipped con alerta (Spec 9). No son flujos de Power Automate.
+- T002/T003/T010/T025/T027: no se crearon carpetas ni un formulario separado; se usa el formulario principal 'CEA Request'.
+- T013: la concurrencia optimista por row-version no está implementada; CompletedLockGuard bloquea ediciones tras completar y existe protección de edición en Final Processing. Pendiente.
+- Resto (T021, T028) manuales/por verificar.
+
+- T013 (actualizado): concurrencia optimista habilitada con IsOptimisticConcurrencyEnabled en cea_request, cea_costline y cea_forecastline (tools\provision-010-concurrency.mjs); una actualización con row-version obsoleta se rechaza (412) y la UI de modelo muestra el aviso de conflicto de forma nativa. Ediciones de no administradores en Final Processing ya bloqueadas por RequestRules ('locked while under review or approved'). Prueba: tests\api\final-concurrency.mjs (3 PASS).
+
+- T021: verificado en Dev: Creators leen (Basic) cea_request, adjuntos (incl. Package=Final), historial y líneas; Administrators Global; Approvals/Internal Approvals Deep. El permiso de lectura no depende del estado, por lo que Completed sigue visible. Creators no leen cea_datacorrectionrecord, pero ven las correcciones como entradas Data Corrected en el historial.

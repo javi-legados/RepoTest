@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="cea.cea_request.Form.Approve.CustomAction" Location="Mscrm.Form.cea_request.MainTab.Save.Controls._children" Sequence="70">
+      <CommandUIDefinition>
+        <Button Id="cea.cea_request.Form.Approve" Command="cea.cea_request.Form.Approve.Command" LabelText="Approve" ToolTipTitle="Approve" ToolTipDescription="Approve the current level" Sequence="71" TemplateAlias="o1" ModernImage="Accept" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="cea.cea_request.Form.Complete.CustomAction" Location="Mscrm.Form.cea_request.MainTab.Save.Controls._children" Sequence="64">
+      <CommandUIDefinition>
+        <Button Id="cea.cea_request.Form.Complete" Command="cea.cea_request.Form.Complete.Command" LabelText="Complete Request" ToolTipTitle="Complete Request" ToolTipDescription="Complete the request after final processing" Sequence="65" TemplateAlias="o1" ModernImage="Accept" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="cea.cea_request.Form.Reject.CustomAction" Location="Mscrm.Form.cea_request.MainTab.Save.Controls._children" Sequence="72">
+      <CommandUIDefinition>
+        <Button Id="cea.cea_request.Form.Reject" Command="cea.cea_request.Form.Reject.Command" LabelText="Reject" ToolTipTitle="Reject" ToolTipDescription="Reject the request with comments" Sequence="73" TemplateAlias="o1" ModernImage="Cancel" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="cea.cea_request.Form.Release.CustomAction" Location="Mscrm.Form.cea_request.MainTab.Save.Controls._children" Sequence="66">
+      <CommandUIDefinition>
+        <Button Id="cea.cea_request.Form.Release" Command="cea.cea_request.Form.Release.Command" LabelText="Release to Approval" ToolTipTitle="Release to Approval" ToolTipDescription="Release the request to the approval chain" Sequence="67" TemplateAlias="o1" ModernImage="Accept" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="cea.cea_request.Form.Resubmit.CustomAction" Location="Mscrm.Form.cea_request.MainTab.Save.Controls._children" Sequence="62">
+      <CommandUIDefinition>
+        <Button Id="cea.cea_request.Form.Resubmit" Command="cea.cea_request.Form.Resubmit.Command" LabelText="Resubmit" ToolTipTitle="Resubmit" ToolTipDescription="Resubmit the corrected request for review" Sequence="63" TemplateAlias="o1" ModernImage="Send" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="cea.cea_request.Form.Return.CustomAction" Location="Mscrm.Form.cea_request.MainTab.Save.Controls._children" Sequence="68">
+      <CommandUIDefinition>
+        <Button Id="cea.cea_request.Form.Return" Command="cea.cea_request.Form.Return.Command" LabelText="Return to Creator" ToolTipTitle="Return to Creator" ToolTipDescription="Return the request to its creator with comments" Sequence="69" TemplateAlias="o1" ModernImage="Undo" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="cea.cea_request.Form.Submit.CustomAction" Location="Mscrm.Form.cea_request.MainTab.Save.Controls._children" Sequence="60">
+      <CommandUIDefinition>
+        <Button Id="cea.cea_request.Form.Submit" Command="cea.cea_request.Form.Submit.Command" LabelText="Submit" ToolTipTitle="Submit" ToolTipDescription="Submit this request for initial review" Sequence="61" TemplateAlias="o1" ModernImage="Send" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="cea.cea_request.Form.Approve.Command">
+      <EnableRules>
+        <EnableRule Id="cea.cea_request.IsPendingApprover.Enable" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="cea.cea_request.Status3.Display" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="CEA.RequestForm.approve" Library="$webresource:cea_/scripts/requestForm.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="cea.cea_request.Form.Complete.Command">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="cea.cea_request.Status10.Display" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="CEA.RequestForm.complete" Library="$webresource:cea_/scripts/requestForm.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="cea.cea_request.Form.Reject.Command">
+      <EnableRules>
+        <EnableRule Id="cea.cea_request.IsPendingApprover.Enable" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="cea.cea_request.Status3.Display" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="CEA.RequestForm.reject" Library="$webresource:cea_/scripts/requestForm.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="cea.cea_request.Form.Release.Command">
+      <EnableRules>
+        <EnableRule Id="cea.cea_request.IsAdmin.Enable" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="cea.cea_request.Status2.Display" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="CEA.RequestForm.releaseToApproval" Library="$webresource:cea_/scripts/requestForm.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="cea.cea_request.Form.Resubmit.Command">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="cea.cea_request.Status9.Display" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="CEA.RequestForm.resubmit" Library="$webresource:cea_/scripts/requestForm.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="cea.cea_request.Form.Return.Command">
+      <EnableRules>
+        <EnableRule Id="cea.cea_request.IsAdmin.Enable" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="cea.cea_request.Status2.Display" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="CEA.RequestForm.returnToCreator" Library="$webresource:cea_/scripts/requestForm.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="cea.cea_request.Form.Submit.Command">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="cea.cea_request.Status1.Display" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="CEA.RequestForm.submit" Library="$webresource:cea_/scripts/requestForm.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="cea.cea_request.Status1.Display">
+        <ValueRule Field="cea_status" Value="1" />
+      </DisplayRule>
+      <DisplayRule Id="cea.cea_request.Status10.Display">
+        <ValueRule Field="cea_status" Value="10" />
+      </DisplayRule>
+      <DisplayRule Id="cea.cea_request.Status2.Display">
+        <ValueRule Field="cea_status" Value="2" />
+      </DisplayRule>
+      <DisplayRule Id="cea.cea_request.Status3.Display">
+        <ValueRule Field="cea_status" Value="3" />
+      </DisplayRule>
+      <DisplayRule Id="cea.cea_request.Status9.Display">
+        <ValueRule Field="cea_status" Value="9" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="cea.cea_request.IsAdmin.Enable">
+        <CustomRule FunctionName="CEA.RequestForm.isAdmin" Library="$webresource:cea_/scripts/requestForm.js" Default="false" />
+      </EnableRule>
+      <EnableRule Id="cea.cea_request.IsPendingApprover.Enable">
+        <CustomRule FunctionName="CEA.RequestForm.isPendingApprover" Library="$webresource:cea_/scripts/requestForm.js" Default="false">
+          <CrmParameter Value="PrimaryControl" />
+        </CustomRule>
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels />
+</RibbonDiffXml>

@@ -49,4 +49,15 @@ tests/api/
 
 | Violation | Why Needed | Simpler Alternative Rejected Because |
 |---|---|---|
-| Plug-in for decision actions | Level ownership, comments and first-wins need atomic server checks | Flows are not atomic or blocking |
+| Plug-ins for decision actions (ApproveStep, RejectStep, ChainAdvance helper, ApproverHold) | Level ownership, comments and first-wins need atomic server checks | Flows are not atomic or blocking |
+
+## Deviation note (implementation)
+- Custom APIs (cea_ApproveStep/cea_RejectStep) and C# plug-ins replace action XML and flows; hold/resume is the ApproverHold plug-in (untested: app users cannot be disabled/reassigned in dev).
+- Resolved Approver gained a Request lookup and StepStatus; a reject marks prior approvals Invalidated and the chain is re-resolved at the next release.
+- Decisions are owned by the request owner. Command-bar Approve/Reject buttons (visible in status 3, enabled for the pending approver) and notifications via Notifier.Enqueue (Spec 9) are now implemented.
+
+
+## Notas de implementación (cierre)
+- Aprobar/Rechazar son Custom APIs (cea_ApproveStep/cea_RejectStep); el comentario es obligatorio (Spec 2 FR-005).
+- Notificaciones vía Notifier.Enqueue; recordatorios cubiertos por cea_ProcessNotifications y el flujo de Spec 9.
+- Botones Approve/Reject en el formulario: visibles en estado 3 y habilitados solo para el aprobador pendiente. No verificado en navegador.

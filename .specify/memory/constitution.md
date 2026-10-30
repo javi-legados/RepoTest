@@ -21,7 +21,7 @@ Rationale: approvals are a business control; the sequence is the product.
 Access MUST be the combination of security role and Business Unit position. The roles are:
 CEA Creators (create/edit own Draft and rejected requests, view only own), CEA Internal
 Approvals (approve/reject with mandatory comments, no edits, only requests within their approval
-hierarchy), CEA Approvals (read-only, all records), and CEA Administrators (full access, approve
+hierarchy), CEA Approvals (read-only, records within its own Business Unit hierarchy), and CEA Administrators (full access, approve
 or reject at Initial and Revision Review only, workflow exceptions, platform administration,
 final documentation). Business Units follow
 Enterprise > Company > Region > Plant, and a user MUST see only records of their own Business Unit
@@ -81,4 +81,4 @@ versioning: MAJOR for removed or redefined principles, MINOR for added or materi
 guidance, PATCH for clarifications. Plans and pull request reviews MUST verify compliance, and
 deviations MUST be justified in writing.
 
-**Version**: 1.2.0 | **Ratified**: 2026-10-29 | **Last Amended**: 2026-10-29
+**Version**: 1.2.1 | **Ratified**: 2026-10-29 | **Last Amended**: 2026-10-29

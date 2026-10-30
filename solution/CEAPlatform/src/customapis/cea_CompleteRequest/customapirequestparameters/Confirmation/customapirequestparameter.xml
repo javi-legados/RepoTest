@@ -1,0 +1,12 @@
+<customapirequestparameter uniquename="Confirmation">
+  <description default="Confirmation">
+    <label description="Confirmation" languagecode="1033" />
+  </description>
+  <displayname default="Confirmation">
+    <label description="Confirmation" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>0</isoptional>
+  <name>Confirmation</name>
+  <type>0</type>
+</customapirequestparameter>

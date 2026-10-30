@@ -1,0 +1,18 @@
+<customapi uniquename="cea_SubmitRequest">
+  <allowedcustomprocessingsteptype>0</allowedcustomprocessingsteptype>
+  <bindingtype>0</bindingtype>
+  <description default="Submit Request">
+    <label description="Submit Request" languagecode="1033" />
+  </description>
+  <displayname default="Submit Request">
+    <label description="Submit Request" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isfunction>0</isfunction>
+  <isprivate>0</isprivate>
+  <name>Submit Request</name>
+  <plugintypeid>
+    <plugintypeexportkey>e9114c05-05d4-f111-a05a-3833c5e36f1f</plugintypeexportkey>
+  </plugintypeid>
+  <workflowsdkstepenabled>0</workflowsdkstepenabled>
+</customapi>

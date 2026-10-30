@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{5f22c833-00d4-f111-a05a-3833c5e36f1f}" name="CEA Approvals" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsCustomizable>1</IsCustomizable>
+  <IsAutoAssigned>0</IsAutoAssigned>
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendTocea_costline" level="Deep" />
+    <RolePrivilege name="prvAppendTocea_forecastline" level="Deep" />
+    <RolePrivilege name="prvAppendTocea_request" level="Deep" />
+    <RolePrivilege name="prvAppendTocea_resolvedapprover" level="Basic" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvReadBusinessUnit" level="Global" />
+    <RolePrivilege name="prvReadcea_approvaldecision" level="Deep" />
+    <RolePrivilege name="prvReadcea_company" level="Global" />
+    <RolePrivilege name="prvReadcea_costline" level="Deep" />
+    <RolePrivilege name="prvReadcea_forecastline" level="Deep" />
+    <RolePrivilege name="prvReadcea_historyentry" level="Deep" />
+    <RolePrivilege name="prvReadcea_initialreview" level="Deep" />
+    <RolePrivilege name="prvReadcea_plant" level="Global" />
+    <RolePrivilege name="prvReadcea_platformsetting" level="Global" />
+    <RolePrivilege name="prvReadcea_region" level="Global" />
+    <RolePrivilege name="prvReadcea_request" level="Deep" />
+    <RolePrivilege name="prvReadcea_requestattachment" level="Deep" />
+    <RolePrivilege name="prvReadcea_resolvedapprover" level="Basic" />
+    <RolePrivilege name="prvReadcea_revisioncycle" level="Deep" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvReadUser" level="Global" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+  </RolePrivileges>
+</Role>

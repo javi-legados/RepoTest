@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{76668029-8e7b-4928-96e6-94c4279b4c9f}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="GENERAL" id="{2ab509e6-e11e-47aa-80a0-a89a5e450eb9}" IsUserDefined="1" showlabel="false" expanded="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="MAIN" showlabel="false" showbar="false" id="{ef6d965b-94d2-481f-b37c-6b81fc698ad1}" IsUserDefined="1">
+                  <labels>
+                    <label description="Company" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6c40b9cd-3689-40f2-9e85-4f14d288ecb2}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="cea_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cea_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{49b56d05-c59e-454b-864f-ec18a1f9072a}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="cea_status" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="cea_status" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{970e5af4-1832-4a0a-a703-a246701654fe}" showlabel="true" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Business Unit" languagecode="1033" />
+                        </labels>
+                        <control id="cea_businessunitid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cea_businessunitid" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

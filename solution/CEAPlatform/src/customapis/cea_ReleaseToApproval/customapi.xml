@@ -1,0 +1,18 @@
+<customapi uniquename="cea_ReleaseToApproval">
+  <allowedcustomprocessingsteptype>0</allowedcustomprocessingsteptype>
+  <bindingtype>0</bindingtype>
+  <description default="Release To Approval">
+    <label description="Release To Approval" languagecode="1033" />
+  </description>
+  <displayname default="Release To Approval">
+    <label description="Release To Approval" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isfunction>0</isfunction>
+  <isprivate>0</isprivate>
+  <name>Release To Approval</name>
+  <plugintypeid>
+    <plugintypeexportkey>ea114c05-05d4-f111-a05a-3833c5e36f1f</plugintypeexportkey>
+  </plugintypeid>
+  <workflowsdkstepenabled>0</workflowsdkstepenabled>
+</customapi>

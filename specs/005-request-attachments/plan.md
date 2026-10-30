@@ -47,3 +47,7 @@ tests/api/
 | Violation | Why Needed | Simpler Alternative Rejected Because |
 |---|---|---|
 | Validation plug-in | Count and duplicate-name limits are not configurable in standard columns | File column max size alone cannot enforce type, count or names |
+
+Deviation: a single plug-in, `AttachmentRules` (PreValidation Create/Delete), replaces `AttachmentValidation` and `AttachmentStatusRoleGuard`. Type and size checks use the File Name and Size columns sent by the client (the file is uploaded after the row is created). The standard sub-grid is used; no PCF uploader (T014).
+
+- T017: the sub-grid Add/Delete commands are hidden in cea_requestattachment/RibbonDiff.xml and replaced by 'Add attachment' / 'Remove attachment' buttons enabled only in Draft or Rejected (CEA.RequestForm.attachmentsEditable). Imported and published; not verified in a browser.

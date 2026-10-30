@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{bac59a69-07d4-f111-a05a-3833c5e36f1f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cea_level" select="1" icon="1" preview="1">
+        <row name="result" id="cea_approvaldecisionid">
+          <cell name="cea_level" width="80" />
+          <cell name="cea_decision" width="100" />
+          <cell name="cea_approverid" width="170" />
+          <cell name="cea_decidedon" width="130" />
+          <cell name="cea_invalidated" width="90" />
+          <cell name="cea_comments" width="250" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cea_approvaldecision">
+          <attribute name="cea_level" />
+          <attribute name="cea_decision" />
+          <attribute name="cea_approverid" />
+          <attribute name="cea_decidedon" />
+          <attribute name="cea_invalidated" />
+          <attribute name="cea_comments" />
+          <order attribute="cea_decidedon" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Approval Decisions" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

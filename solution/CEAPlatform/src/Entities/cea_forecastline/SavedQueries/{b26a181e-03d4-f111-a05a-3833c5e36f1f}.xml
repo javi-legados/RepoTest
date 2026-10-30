@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{b26a181e-03d4-f111-a05a-3833c5e36f1f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cea_year" select="1" icon="1" preview="1">
+        <row name="result" id="cea_forecastlineid">
+          <cell name="cea_year" width="80" />
+          <cell name="cea_month" width="80" />
+          <cell name="cea_percentage" width="100" />
+          <cell name="cea_amount" width="120" />
+          <cell name="cea_comments" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cea_forecastline">
+          <attribute name="cea_year" />
+          <attribute name="cea_month" />
+          <attribute name="cea_percentage" />
+          <attribute name="cea_amount" />
+          <attribute name="cea_comments" />
+          <order attribute="cea_year" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Forecast Lines" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
